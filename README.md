@@ -80,7 +80,7 @@ python test_connection.py
 
 ### Read-Only Policy: `coder-partner-mcp-readonly`
 
-We use the `coder-partner-mcp-readonly` IAM policy (`arn:aws:iam::891377257240:policy/coder-partner-mcp-readonly`). This policy is sufficient for all queries demonstrated in this guide.
+We use the `coder-partner-mcp-readonly` IAM policy (`arn:aws:iam::<your-account-id>:policy/coder-partner-mcp-readonly`). This policy is sufficient for all queries demonstrated in this guide.
 
 ```json
 {
@@ -114,7 +114,7 @@ Attach to a user or role:
 ```bash
 aws iam attach-user-policy \
     --user-name <your-iam-user> \
-    --policy-arn arn:aws:iam::891377257240:policy/coder-partner-mcp-readonly
+    --policy-arn arn:aws:iam::<your-account-id>:policy/coder-partner-mcp-readonly
 ```
 
 For write operations (opportunity creation, funding applications), see [docs/iam-policies.md](docs/iam-policies.md).

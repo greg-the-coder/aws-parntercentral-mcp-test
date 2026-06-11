@@ -2,7 +2,7 @@
 
 ## Read-Only Policy: `coder-partner-mcp-readonly`
 
-**ARN:** `arn:aws:iam::891377257240:policy/coder-partner-mcp-readonly`
+**ARN:** `arn:aws:iam::<your-account-id>:policy/coder-partner-mcp-readonly`
 
 This policy grants:
 - MCP session access (required for all MCP communication)
@@ -43,7 +43,7 @@ This policy grants:
 ```bash
 aws iam attach-user-policy \
     --user-name <your-iam-user> \
-    --policy-arn arn:aws:iam::891377257240:policy/coder-partner-mcp-readonly
+    --policy-arn arn:aws:iam::<your-account-id>:policy/coder-partner-mcp-readonly
 ```
 
 ### Attach to a Role
@@ -51,7 +51,7 @@ aws iam attach-user-policy \
 ```bash
 aws iam attach-role-policy \
     --role-name <your-role-name> \
-    --policy-arn arn:aws:iam::891377257240:policy/coder-partner-mcp-readonly
+    --policy-arn arn:aws:iam::<your-account-id>:policy/coder-partner-mcp-readonly
 ```
 
 ---
